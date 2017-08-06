@@ -2,19 +2,22 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<title>Andie's Bootstrap Portfolio</title>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> <-->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.csss"/> <-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-	<header>
-		<div class="page-width">
-			<h1>Andie Patel</h1>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
+	<header class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand">Andie Patel</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="active" href="index.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</div>
 	</header>
 	<section>
@@ -38,12 +41,30 @@
 					<button type="submit">Submit</button>
 				</form>
 			</article>
-			<aside>
-				<h2>Connect with Me</h2>
-				<hr/>
-				<a href="https://www.github.com/andiebp" title="My Github Repo"><img src="assets/images/github.png"/></a>
-				<a href="https://www.linkedin.com/in/andiebou" title="My LinkedIn Profile"><img src="assets/images/linkedin.png"/></a>
-				<a href="https://www.stackoverflow.com/users/8223867/andiebou" title="My Stack Overflow Profile"><img src="assets/images/stackoverflow.png"/></a>
+			<aside class="col-xs-12 col-sm-12 col-md-4 panel panel-default">
+				<h2 class="panel-heading">Connect with Me</h2>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4">
+
+							<a href="https://www.github.com/andiebp" title="My Github Repo"><img src="assets/images/github.png" class="img-responsive" alt="img-responsive"/></a>
+
+						</div>
+
+						<div class="col-xs-4 col-sm-4 col-md-4">
+
+							<a href="https://www.linkedin.com/in/andiebou" title="My LinkedIn Profile"><img  src="assets/images/linkedin.png" class="img-responsive" alt="img-responsive"/></a>
+
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4">
+
+							<a href="https://www.stackoverflow.com/users/8223867/andiebou" title="My Stack Overflow Profile"><img  src="assets/images/stackoverflow.png" class="img-responsive" alt="img-responsive"/></a>
+
+						</div>
+
+
+					</div>
+				</div>
 			</aside>
 		</div>
 	</section>
